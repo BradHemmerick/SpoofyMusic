@@ -12,6 +12,9 @@ const SCOPES = [
   "user-read-playback-state",
   "user-modify-playback-state",
 ];
+
+console.log('Redirect URI:', REDIRECT_URI);
+
 const SCOPES_URL_PARAM = SCOPES.join('%20');
 const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${CLIENT_ID}&response_type=token&redirect_uri=${REDIRECT_URI}&scope=${SCOPES_URL_PARAM}&show_dialog=true`;
 
