@@ -1,0 +1,64 @@
+.dashboardContainer {
+    padding: 20px;
+    padding-left: 280px;
+  }
+  
+  .tracksGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+    gap: 20px; 
+  }
+  
+  .trackItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .trackImage {
+    width: 100%; 
+    aspect-ratio: 1; 
+  }
+  
+  .trackName {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .artistName {
+    color: #BB86FC; 
+    font-size: 14px; 
+  }
+  
+  .trackItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer; 
+  }
+  
+  .playIcon {
+    display: none; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color: #BB86FC; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trackItem:hover .playIcon {
+    display: flex; 
+  }
+
+  .playIcon svg {
+    fill: black; 
+  }
